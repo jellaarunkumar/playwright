@@ -16,7 +16,10 @@ test('Register User on Automation Exercise', async ({ page }) => {
 
   // Step 6: Enter name and email address
   await page.fill('input[data-qa="signup-name"]', 'Arun Jella');
-  await page.fill('input[data-qa="signup-email"]', 'aj1@hanasoft.com');
+  const randomEmail = `aj_${Date.now()}@hanasoft.com`;
+  await page.fill('input[data-qa="signup-email"]', randomEmail);
+
+  //await page.fill('input[data-qa="signup-email"]', 'aj2@hanasoft.com');
 
   // Step 7: Click 'Signup' button
   await page.click('button[data-qa="signup-button"]');
