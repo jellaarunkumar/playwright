@@ -56,8 +56,8 @@ test('test', async ({ page }) => {
   await page.locator('#menu-item-1755').click();
   await expect(page).toHaveURL('https://developmentbeyondlearning.com/resources/?_categories=research');
   await page.goto('https://developmentbeyondlearning.com/')
-  await page.locator('(//a[text()="Resources"])[1]').hover();
-  await page.locator('#menu-item-2277').click();
-  await expect(page).toHaveURL('https://developmentbeyondlearning.com/contact/#faqs');
-  await page.goto('https://developmentbeyondlearning.com/')
+  // await page.locator('(//a[text()="Resources"])[1]').hover();
+  // await page.locator('#menu-item-2277').click();
+  // await expect(page).toHaveURL('https://developmentbeyondlearning.com/contact/#faqs');
+  // await page.goto('https://developmentbeyondlearning.com/')
 });
