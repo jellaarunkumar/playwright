@@ -18,6 +18,7 @@ test('Register User on Automation Exercise', async ({ page }) => {
   await page.fill('input[data-qa="signup-name"]', 'Arun Jella');
   const randomEmail = `aj_${Date.now()}@hanasoft.com`;
   await page.fill('input[data-qa="signup-email"]', randomEmail);
+  console.log(randomEmail);
 
   //await page.fill('input[data-qa="signup-email"]', 'aj2@hanasoft.com');
 
